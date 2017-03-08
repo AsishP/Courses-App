@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-app>
+    <span class="label label-primary">
+        Courses Display
+    </span>
+    <div class="table-responsive" ng-view>
+        <table class="table-hover">
+            <tr>
+                <th>Courses ID</th>
+                <th>Name</th>
+                <th>Content</th>
+                <th>Description</th>
+            </tr>
+            <tr ng-repeat="course in Courses">
+                <td>{{CourseID}}</td>
+                <td>{{CourseName}}</td>
+                <td>{{CourseContent}}</td>
+                <td>{{CourseDescription}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

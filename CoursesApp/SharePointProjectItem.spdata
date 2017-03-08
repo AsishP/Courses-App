@@ -7,5 +7,9 @@
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.ttf" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.svg" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.eot" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="AppComponents\Scripts\CoursesModule.js" Target="AppComponents\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="AppComponents\Scripts\CoursesAppDisplayController.js" Target="AppComponents\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="AppComponents\Scripts\DisplayCoursesFactory.js" Target="AppComponents\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="AppComponents\Partials\DisplayCourses.html" Target="AppComponents\Partials\" Type="ElementFile" />
   </Files>
 </ProjectItem>

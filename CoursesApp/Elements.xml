@@ -6,5 +6,9 @@
     <File Path="fonts\glyphicons-halflings-regular.ttf" Url="fonts/glyphicons-halflings-regular.ttf" ReplaceContent="TRUE" />
     <File Path="fonts\glyphicons-halflings-regular.svg" Url="fonts/glyphicons-halflings-regular.svg" ReplaceContent="TRUE" />
     <File Path="fonts\glyphicons-halflings-regular.eot" Url="fonts/glyphicons-halflings-regular.eot" ReplaceContent="TRUE" />
+    <File Path="AppComponents\Scripts\CoursesModule.js" Url="AppComponents/Scripts/CoursesModule.js" ReplaceContent="TRUE" />
+    <File Path="AppComponents\Scripts\CoursesAppDisplayController.js" Url="AppComponents/Scripts/CoursesAppDisplayController.js" ReplaceContent="TRUE" />
+    <File Path="AppComponents\Scripts\DisplayCoursesFactory.js" Url="AppComponents/Scripts/DisplayCoursesFactory.js" ReplaceContent="TRUE" />
+    <File Path="AppComponents\Partials\DisplayCourses.html" Url="AppComponents/Partials/DisplayCourses.html" ReplaceContent="TRUE" />
   </Module>
 </Elements>

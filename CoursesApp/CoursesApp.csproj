@@ -55,6 +55,10 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7f2a2b9a-717c-4303-b196-4e1d5412b8fd}</SharePointProjectItemId>
     </None>
+    <Content Include="AppComponents\Partials\DisplayCourses.html" />
+    <Content Include="AppComponents\Scripts\CoursesAppDisplayController.js" />
+    <Content Include="AppComponents\Scripts\CoursesModule.js" />
+    <Content Include="AppComponents\Scripts\DisplayCoursesFactory.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
