@@ -11,5 +11,7 @@
     <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-mocks.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
