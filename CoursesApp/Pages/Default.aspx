@@ -21,6 +21,7 @@
     <!-- Add Angular Scripts -->
     <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src ="../Scripts/angular.min.js"></script>
+    <script type="text/javascript" src ="../Scripts/angular-route.min.js"></script>
     <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
  
     <script type="text/javascript" src="../AppComponents/Scripts/CoursesModule.js"></script>
@@ -40,6 +41,7 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
     <div ng-app="CoursesModule">
+        Testing
         <p id="message">
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
             Getting the courses information

@@ -1,14 +1,11 @@
 ﻿(function () {
     'use strict';
     
-    angular.module('CoursesModule', [
+   angular.module('CoursesModule', [
         // Angular modules 
         'ngRoute'
-
         // Custom modules 
-
         // 3rd Party Modules
-        
     ])
     .config(function($routeProvider, $locationProvider) {
         $routeProvider

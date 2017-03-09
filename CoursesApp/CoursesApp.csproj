@@ -67,6 +67,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Scripts\angular-route.min.js.map" />
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c8c6d699-1ae8-4c0f-b992-fbf70bbb2e7f}</SharePointProjectItemId>
     </None>
@@ -78,6 +79,8 @@
       <SharePointProjectItemId>{2a4e2abd-e14b-4b4b-9885-137db177a851}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
