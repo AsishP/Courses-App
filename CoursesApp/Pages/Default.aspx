@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src ="../Scripts/angular.min.js"></script>
     <script type="text/javascript" src ="../Scripts/angular-route.min.js"></script>
-    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+
  
     <script type="text/javascript" src="../AppComponents/Scripts/CoursesModule.js"></script>
     <script type="text/javascript" src="../AppComponents/Scripts/CoursesAppDisplayController.js" ></script>
@@ -39,14 +39,33 @@
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-
-    <div ng-app="CoursesModule">
-        Testing
+    <div >
         <p id="message">
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
             Getting the courses information
         </p>
-        <div ng-view></div>
     </div>
-
+     <span class="label label-primary">
+        Courses Display
+    </span>
+    <div ng-app="CoursesModule">
+        <div ng-controller="CoursesAppDisplayController">
+            <div class="table-responsive">
+                <table class="table-hover">
+                    <tr>
+                        <th class="c1">Courses ID</th>
+                        <th class="c1">Name</th>
+                        <th class="c1">Content</th>
+                        <th class="c1">Description</th>
+                    </tr>
+                    <tr ng-repeat="course in Courses">
+                        <td>{{CourseID}}</td>
+                        <td>{{CourseName}}</td>
+                        <td>{{CourseContent}}</td>
+                        <td>{{CourseType}}</td>
+                    </tr>
+                </table>
+            </div>
+       </div>
+    </div>
 </asp:Content>
