@@ -6,8 +6,9 @@
         .controller('CoursesAppDisplayController', CoursesAppDisplayController);
 
     //CoursesAppDisplayController.$inject = ['$location'];
+    CoursesAppDisplayController.$inject = ['$q'];
 
-    function CoursesAppDisplayController($scope, DisplayCoursesFactory) {
+    function CoursesAppDisplayController($scope, $q, DisplayCoursesFactory) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'CoursesAppDisplayController';
@@ -15,8 +16,21 @@
 
         activate();
 
+        function loadCourses() {
+            var promiseGet = DisplayCoursesFactory.getCourses();
+            promiseGet.then(function (resp) {
+                $scope.Courses = resp;
+            }, function (err) {
+                $scope.Message = "Error " + err.status;
+            });
+        }
+
         function activate() {
-            $scope.Courses = DisplayCoursesFactory.getTestCourses();
+            ////Test data
+            //$scope.Courses = DisplayCoursesFactory.getTestCourses();
+
+            //Live data
+            loadCourses();
         }
     }
 })();

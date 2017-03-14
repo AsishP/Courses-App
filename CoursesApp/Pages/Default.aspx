@@ -50,22 +50,24 @@
     </span>
     <div ng-app="CoursesModule">
         <div ng-controller="CoursesAppDisplayController">
-            <div class="table-responsive">
-                <table class="table-hover">
-                    <tr>
-                        <th class="c1">Courses ID</th>
-                        <th class="c1">Name</th>
-                        <th class="c1">Content</th>
-                        <th class="c1">Description</th>
-                    </tr>
-                    <tr ng-repeat="course in Courses">
-                        <td>{{CourseID}}</td>
-                        <td>{{CourseName}}</td>
-                        <td>{{CourseContent}}</td>
-                        <td>{{CourseType}}</td>
-                    </tr>
+                <table class="table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th class="c1">Courses ID</th>
+                            <th class="c1">Name</th>
+                            <th class="c1">Content</th>
+                            <th class="c1">Description</th>
+                        </tr>
+                   </thead>
+                    <tbody>
+                        <tr ng-repeat="course in Courses|orderBy:'CourseID'">
+                            <td>{{course.CourseID}}</td>
+                            <td>{{course.CourseName}}</td>
+                            <td>{{course.CourseContent}}</td>
+                            <td>{{course.SelectedCourses}}</td>
+                        </tr>
+                    </tbody>
                 </table>
-            </div>
-       </div>
+         </div>
     </div>
 </asp:Content>
