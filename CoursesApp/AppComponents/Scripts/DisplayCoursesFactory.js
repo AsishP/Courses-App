@@ -5,10 +5,10 @@
         .module('CoursesModule')
         .factory('DisplayCoursesFactory', DisplayCoursesFactory);
 
-    DisplayCoursesFactory.$inject = ['$http'];
+    //DisplayCoursesFactory.$inject = ['$http'];
     DisplayCoursesFactory.$inject = ['$q'];
 
-    function DisplayCoursesFactory($http, $q) {
+    function DisplayCoursesFactory($q) {
         var service = {
             getCourses: getCourses,
             getTestCourses: getTestCourses

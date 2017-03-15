@@ -50,6 +50,9 @@
     </span>
     <div ng-app="CoursesModule">
         <div ng-controller="CoursesAppDisplayController">
+                <div id="error">
+                    {{Message}}
+                </div>
                 <table class="table-hover table-bordered table-striped">
                     <thead>
                         <tr>

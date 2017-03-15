@@ -6,9 +6,9 @@
         .controller('CoursesAppDisplayController', CoursesAppDisplayController);
 
     //CoursesAppDisplayController.$inject = ['$location'];
-    CoursesAppDisplayController.$inject = ['$q'];
+    //CoursesAppDisplayController.$inject = ['$q'];
 
-    function CoursesAppDisplayController($scope, $q, DisplayCoursesFactory) {
+    function CoursesAppDisplayController($scope, DisplayCoursesFactory) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'CoursesAppDisplayController';
